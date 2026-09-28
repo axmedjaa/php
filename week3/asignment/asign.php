@@ -62,7 +62,7 @@
     echo "<br>";
     // 5
     // find reverse of number no build func
-    $number_ref=123;
+    $number_ref=1234;
     $referse=0;
     while($number_ref>0){
         $last=$number_ref%10;
@@ -70,7 +70,38 @@
         $number_ref=(int)($number_ref/10);
     }
     echo $referse;
-   
+    echo "<br>";
+//    6
+    // lcm of two numbers
+    $lcm_num1=10;
+    $lcm_num2=12;
+    $lcm=$lcm_num1;
+    while($lcm%$lcm_num2!=0){
+        $lcm=$lcm+$lcm_num1;
+    }
+    echo "The LCM of ".$lcm_num1." and ".$lcm_num2." is: ".$lcm;    
+    echo "<br>";
+    // 7
+    // hcf of two numbers
+    $hcf_num1=10;
+    $hcf_num2=12;
+    $hcf=$hcf_num1;
+    while($hcf_num1%$hcf!=0 || $hcf_num2%$hcf!=0){
+        $hcf--;
+    }
+    echo "The HCF of ".$hcf_num1." and ".$hcf_num2." is: ".$hcf;
+    echo "<br>";
+    // 8
+    //  multiplication table up to 12 * 12
+    echo "<table border='1'>";
+    for($i=1;$i<=12;$i++){
+        echo "<tr>";
+        for($j=1;$j<=12;$j++){
+            echo "<td>".$i*$j."</td>";
+        }
+        echo "</tr>";
+    }
+    echo "</table>";
     ?>
 </body>
 </html>

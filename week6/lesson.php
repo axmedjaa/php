@@ -85,7 +85,7 @@
     $extension = array("png","bdf");
 
     $temp = $_FILES["stdimage"]["tmp_name"];
-    $distanition = "C:\Users\hp\Desktop\PHP\Image". $_POST["fullname"].".".$EXT;
+    $distanition = "C:\Users\NOOR AL MUSABAH\Documents\filesupload". $_POST["fullname"].".".$EXT;
 
   if(file_exists($distanition)){
     echo "sorry the folder is not exist";
